@@ -1,0 +1,42 @@
+name: trader_mobile
+description: Cross-platform client (iOS/Android/Windows) for your trading server with ML monitor.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # أساسي
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.0
+
+  # WebView للموبايل (Android/iOS)
+  webview_flutter: ^4.7.0
+  webview_flutter_wkwebview: ^3.13.0   # iOS
+
+  # WebView لويندوز (الصحيح على pub.dev)
+  webview_windows: ^0.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # أضف أصولاً لاحقًا إن احتجت
+  # assets:
+  #   - assets/
+
+  # أضف خطوطًا لاحقًا إن احتجت
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
